@@ -1,0 +1,35 @@
+/* Reset */
+body, p, h1, h2, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+
+/* Asterisco é para selecionar todos os itens do html */
+* {
+    box-sizing: border-box;
+}
+
+
+/* MENU */
+
+.header-informacoes {
+    font-size: 0.875em;
+    background: #d6d3c8;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.header-logo img {
+    display: block;
+    margin: 40px auto;
+}
