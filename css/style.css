@@ -33,3 +33,35 @@ body {
     display: block;
     margin: 40px auto;
 }
+
+.header-menu {
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu li a {
+    display: block;
+    padding: 5px 10px 5px 0;
+    text-decoration: none;
+    color: #252525;
+    font-size: 1.125em;  /* 18px dividido por 16px */
+}
+
+.header-menu li a::before  {
+    content: "•";
+    padding-right: 10px;
+}
+
+
+/* abaixo eh para falar com o primeiro "a" da lista para ele não ter a bolinha antes do nome */
+.header-menu li:first-child a::before {
+    content: "";
+}
+
