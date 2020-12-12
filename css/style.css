@@ -73,6 +73,12 @@ body {
     margin: 0 auto;
 }
 
+.container::after, .container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Filtro */
 
 .filtro {
@@ -147,4 +153,60 @@ body {
                 40px 0 0 0, 
                 60px 0 0 0, 
                 80px 0 0 0;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    width: 620px;
+    margin: 0 10px;
+    float: left;
+}
+
+.produtos h1 {
+    font-size: 3em;   /* esse fonte 3em é de 48px dividido por 16px */
+    font-weight: normal;
+}
+
+.produtos li {
+    width: 300px;
+    float: left;
+}
+
+.produtos li:nth-child(even){        /* eh para falar com os itens da lista que são pares, no caso 2, 4 e 6  */
+    margin-left: 20px;
+}  
+
+.produtos li img {
+    display: block;
+    max-width: 100%;    
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #252525;
+    margin: 40px 3px 0 3px;    /* esse 3px eh para o box-shadow, que é a sombra, para ele ficar certo com os outros elementos */
+}
+
+
+.produtos li span {
+    background: #e7e4d8;
+    padding: 10px;
+    font-size: 0.875em;  /* é o de 14px dividido por 16px */
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+}
+
+.produtos li h2 {
+    font-size: 0.875em;
+    font-weight: normal;
+}
+
+
+.footer {
+    margin-top: 80px;
+    background: #e7e4d8;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 1.125em;
+    line-height: 1.4em;
 }
